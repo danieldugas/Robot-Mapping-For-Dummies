@@ -12,9 +12,9 @@ So the brand new camera/lidar/puppy-detector on your robot is working. Obviously
 ### Right?
 
 After a few google searches, maybe bearing a passing resemblance to "visual keypoint odometry", "lidar 3d mapping", "lidar keypoint comparison", "best odometry from RGB-D framework", "10 loop closure algorithms you probably don't know about", "quitting robotics success story", "sensor fusion SLAM", 
-you might have gotten lost and concluded there are no smart people or amazing tools. Or maybe they're just a pain to find? *What if after six months of head-scratching to build the perfect localizing node, someone casually mentions the exact same thing exists but better, and it was only 5 pages away in some obscure literature search*? Oh no.
+you might have gotten lost and concluded that the problem is harder than it seems, or the smart people are not very good at sharing their amazing tools. Or they're just a pain to find? *What if after six months of head-scratching to build the perfect localizing node, someone casually mentions the exact same thing exists but better, and it was only 5 pages away in some obscure literature search*? Oh no.
 
-And obviously, you've looked at what ROS offers out of the box. Which is very useful if your robot is a 2d roomba with a flat laser scanner. But it's not, is it? Otherwise, you wouldn't be here. And to not be casually dismissive, there *are* some 3D SLAM tutorials on the ROS wiki, which you might have looked at. And then ended up here anyways. 
+And obviously, you've looked at what ROS offers out of the box. Which is very useful if your robot is a 2d roomba with a flat laser scanner. But that's not enough, is it? Otherwise, you wouldn't be here. And to not be casually dismissive, the ROS mapping tools [[1]](http://wiki.ros.org/cn/slam_gmapping/Tutorials/MappingFromLoggedData) are not a bad starting point, there even are some 3D SLAM tutorial(s?) on the ROS wiki [[2]](https://github.com/introlab/rtabmap/wiki/Tutorials), which you might have looked at. And then ended up here anyways. 
 
 Regardless of how it happened, you're here now. You're safe.
 
@@ -28,7 +28,12 @@ And maybe it'll help you get started faster, impress your PhD supervisor, get pa
 Scratch this section?
 ```
 Are you trying to do SLAM? Just Localization?
-A review is only meaningful if the vocabulary is consistent. Google cartographer talks about it's local SLAM being a *frontend*, and loop closure framework a *backend*. Do those terms generalize?
+A review is only meaningful if the vocabulary is consistent. You might have read on the Google cartographer documentation about it's local SLAM being a *frontend*, and loop closure framework a *backend*. Are those also the terms used by other systems?
+...
+Descriptor
+Frontend/backend
+Loop closure
+Localization
 ...
 
 ## Tools
@@ -42,5 +47,8 @@ Rovio
 OrbSlam
 Google Cartographer
 SegMap
+Gmapping
+Octomap
+
 
 ...
